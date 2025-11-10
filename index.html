@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nascence Group | Janitorial Services</title>
+    <meta name="description" content="Nascence Group - Where Hygiene meets safety. Professional janitorial services focused on hygiene, safety, and compliance." />
+    <style>
+      :root {
+        /* Perplexity Design System from system instructions */
+        --color-white: rgba(255, 255, 255, 1);
+        --color-black: rgba(0, 0, 0, 1);
+        --color-cream-50: rgba(252, 252, 249, 1);
+        --color-cream-100: rgba(255, 255, 253, 1);
+        --color-gray-200: rgba(245, 245, 245, 1);
+        --color-gray-300: rgba(167, 169, 169, 1);
+        --color-gray-400: rgba(119, 124, 124, 1);
+        --color-slate-500: rgba(98, 108, 113, 1);
+        --color-brown-600: rgba(94, 82, 64, 1);
+        --color-charcoal-700: rgba(31, 33, 33, 1);
+        --color-charcoal-800: rgba(38, 40, 40, 1);
+        --color-slate-900: rgba(19, 52, 59, 1);
+        --color-teal-300: rgba(50, 184, 198, 1);
+        --color-teal-400: rgba(45, 166, 178, 1);
+        --color-teal-500: rgba(33, 128, 141, 1);
+        --color-teal-600: rgba(29, 116, 128, 1);
+        --color-teal-700: rgba(26, 104, 115, 1);
+        --color-teal-800: rgba(41, 150, 161, 1);
+        --color-red-400: rgba(255, 84, 89, 1);
+        --color-red-500: rgba(192, 21, 47, 1);
+        --color-orange-400: rgba(230, 129, 97, 1);
+        --color-orange-500: rgba(168, 75, 47, 1);
+        /* Design system added above -- KEEP per rules */
+        /* Brand Colors */
+        --brand-primary: #1e5f8e;
+        --brand-secondary: #2e7eac;
+        --brand-accent: #4ca3d1;
+        --brand-background: #ffffff;
+        --brand-text: #333333;
+      }
+      body {
+        font-family: var(--font-family-base, 'FKGroteskNeue', 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+        background-color: var(--brand-background);
+        color: var(--brand-text);
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background: var(--brand-primary);
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 1px 6px rgba(30,95,142,0.06);
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+      .logo-icon {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        background: transparent;
+      }
+      .logo-text {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px;
+        flex: 1;
+        justify-content: center;
+        min-height: 0;
+      }
+      .hero {
+        width: 100%;
+        max-width: 730px;
+        margin: 0 auto 20px auto;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px rgba(30, 95, 142, 0.15);
+        background: var(--color-bg-1);
+      }
+      .hero img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+      .tagline {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+        color: var(--brand-primary);
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        line-height: 1.1;
+      }
+      .visit-btn {
+        display: inline-block;
+        background: var(--brand-primary);
+        color: #fff;
+        padding: 16px 38px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        font-weight: 550;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(30, 95, 142, 0.09);
+        transition: background 0.2s;
+        margin-bottom: 24px;
+      }
+      .visit-btn:hover {
+        background: var(--brand-secondary);
+      }
+      .services-section {
+        margin: 46px auto 0 auto;
+        max-width: 640px;
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 4px 20px rgba(30, 95, 142, 0.07);
+        padding: 32px 24px 26px 24px;
+      }
+      .services-title {
+        color: var(--brand-primary);
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+        font-weight: 650;
+        text-align: center;
+      }
+      .services-list {
+        padding-left: 0;
+        list-style: none;
+        max-width: 450px; 
+        margin: 0 auto;
+      }
+      .services-list li {
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        color: var(--brand-text);
+        gap: 12px;
+        margin: 7px 0 7px 0;
+        font-weight: 500;
+      }
+      .services-list li::before {
+        content: "\2714";
+        color: var(--brand-accent);
+        font-size: 1.2em;
+        margin-right: 8px;
+      }
+      .services-description {
+        margin-top: 20px;
+        color: var(--brand-text);
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      @media (max-width: 800px) {
+        .hero {
+          max-width: 98vw;
+        }
+        .services-section {
+          max-width: 98vw;
+        }
+      }
+      @media (max-width: 500px) {
+        .logo-icon {
+          width: 38px; height: 38px;
+        }
+        .logo-text {
+          font-size: 1.3rem;
+        }
+        .tagline {
+          font-size: 1.2rem;
+          margin-top: 20px;
+        }
+        .services-title {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- Simple book/pages logo SVG, blue color -->
+        <span class="logo-icon" aria-label="Nascence Group Logo">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="8" width="28" height="33" rx="5" stroke="#4ca3d1" stroke-width="3" fill="#fff"/>
+            <rect x="14" y="13" width="20" height="22" rx="3" fill="#eaf6fc" stroke="#1e5f8e" stroke-width="2"/>
+            <path d="M17 16H31" stroke="#1e5f8e" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M17 21H31" stroke="#1e5f8e" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M17 26H26.5" stroke="#1e5f8e" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Nascence Group</span>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/afe78151-c94a-4feb-8453-9ba5c1c89389.png" alt="Nascence Group promotional janitorial services scene" />
+      </div>
+      <h1 class="tagline">Where Hygiene meets safety</h1>
+      <a class="visit-btn" href="https://www.thenascencegroup.com/" target="_blank" rel="noopener">Visit Website</a>
+
+      <section class="services-section">
+        <h2 class="services-title">Our Services</h2>
+        <ul class="services-list">
+          <li>Professional Cleaning Services</li>
+          <li>Hygiene Management</li>
+          <li>Safety Compliance</li>
+          <li>Office Maintenance</li>
+        </ul>
+        <div class="services-description">
+          Professional cleaning and hygiene services with a strong commitment to rigorous safety standards. Nascence Group ensures spotless spaces, healthy environments, and peace of mind for workplaces of all sizes.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
